@@ -1,0 +1,78 @@
+.anime {
+    overflow: hidden;
+}
+
+.anime > .cover {
+    position: relative;
+    margin-bottom: .5em;
+}
+
+.anime > .cover > .score {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: .75em;
+    left: .3875em;
+    font-weight: 700;
+    font-size: .7rem;
+    background-color: rgba(0, 0, 0, .5);
+    min-width: 5em;
+    text-align: center;
+    border-radius: 5em;
+    line-height: 1.4285em;
+    padding: .2rem;
+}
+
+.anime > .cover > .score > span {
+    display: flex;
+    margin-right: .2rem;
+}
+
+.anime > .cover > .score > span > svg{
+    fill: #EABE3F;
+    width: .8rem;
+}
+
+.anime > .cover > .score > b {
+    margin-left: 3px;
+    color: #EABE3F;
+}
+
+.anime > .cover > a > .image {
+    position: relative;
+    overflow: hidden;
+    line-height: 0;
+    width: 100%;
+    padding-bottom: 142.85%;
+}
+
+.anime > .cover > a > .image div:first-child {
+    position: absolute!important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.anime > .info > h3  {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.anime > .info > h3 > a > span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    position: relative;
+    float: left;
+    font-size: .8rem;
+}
+
+.anime > .info > .year {
+    font-size: .6rem;
+    color: #b9b9b9;
+}

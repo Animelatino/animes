@@ -1,0 +1,45 @@
+.result {
+    display: flex;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: .525em .525em 0;
+    min-height: 55px;
+}
+
+.result:first-child {
+    padding-top: .725em;
+}
+
+.result div:first-child {
+    display: inline-block;
+    height: auto;
+    width: 40px;
+}
+
+.result img {
+    object-fit: cover;
+}
+
+.result .content {
+    display: inline-block;
+    padding: .5rem;
+    overflow: hidden;
+}
+
+.result .content .title {
+    display: list-item;
+    list-style: none;
+    margin-bottom: .25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.result .content .type {
+    display: list-item;
+    list-style: none;
+    margin-bottom: .25rem;
+    font-size: .65rem;
+    color: #b9b9b9;
+    font-weight: 400;
+}

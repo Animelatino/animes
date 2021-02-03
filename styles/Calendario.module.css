@@ -1,0 +1,76 @@
+.container .listCalendar {
+    padding: 2rem 0;
+}
+
+.container .listCalendar > h1 {
+    border: 0;
+    margin: calc(2rem - .14285em) 0 1rem;
+    padding: .25em 0;
+    font-weight: 700;
+    line-height: 1.2857em;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.container .listCalendar > h1 > .border {
+    padding-bottom: .3em;
+    border-bottom: solid 1px #e50914;
+}
+
+.container .listCalendar > .calendar {
+    margin: 2rem 0;
+}
+
+.container .listCalendar > .calendar > .date {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.container .listCalendar > .calendar > .date > .day {
+    font-size: 1.5rem;
+    padding-right: .2rem;
+    text-transform: capitalize;
+}
+
+.container .listCalendar > .calendar > .date > .split {
+    flex: 1;
+    border-bottom: 1px solid #333;
+}
+
+.container .listCalendar > .calendar > .data {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+
+@media (max-width: 1440px) {
+    .container .listCalendar > .calendar > .data {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .container .listCalendar > .calendar > .data {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .container .listCalendar > .calendar > .data {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 425px) {
+    .container .listCalendar > .calendar > .data {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 375px) {
+    .container .listCalendar > .calendar > .data {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

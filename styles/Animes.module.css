@@ -1,0 +1,129 @@
+
+.container .BoxFilter {
+    padding: 1rem 0;
+    background: var(--tertiary-color);
+    text-align: center;
+    cursor: pointer;
+    border-radius: .3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    border: 1px solid;
+    border-color: var(--border-color);
+}
+
+.container .filter {
+    
+    padding: 1rem 0;
+    padding-top: 2rem;
+}
+
+.container .filter .ListTypes {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .filter .ListTypes .type {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container .filter .ListTypes .type label {
+    text-transform: uppercase;
+    font-size: .8rem;
+    color: #b9b9b9;
+    margin-right: 10px;
+}
+
+.container .filter .ListTypes .type select {
+    background: var(--tertiary-color);
+    color: var(--gray-color);
+    border: 0;
+    padding: .7rem .5rem;
+    min-width: 165px;
+    font-size: .8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container .filter .ListTypes .type select option {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: .5rem;
+}
+
+.container .paginate {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container .paginate .item {
+    font-size: .85rem;
+    padding: .5375em .925em;
+    justify-content: center;
+    min-width: 3em;
+    text-align: center;
+    color: #b9b9b9;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container .paginate .item.active {
+    border-radius: 100%;
+    color: #f9f9f9;
+    background-color: #221f1f;
+}
+
+.container .paginate .item svg {
+    fill: #b9b9b9;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .container .filter {
+        margin-bottom: 1rem;
+    }
+    .container .filter .ListTypes {
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+    .container .filter .ListTypes .type {
+        margin: 0;
+    }
+    .container .filter .ListTypes .type select {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .container .filter .ListTypes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container .filter .ListTypes .type {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container .filter .ListTypes .type label{
+        margin-bottom: .5rem;
+    }
+    .container .filter .ListTypes .type select {
+        background: var(--tertiary-color);
+        color: var(--gray-color);
+        border: 0;
+        padding: .7rem .5rem;
+        font-size: .6rem;
+        width: 100%;
+    }
+}
