@@ -189,7 +189,7 @@ export default class number extends Component {
                 <main className={styles.container}>
                     { this.videoPlayer() }
                     { this.navCaps() }
-                    <Comments title={`${data?.anime?.slug} Episodio ${data?.number}`} url={`${process.env.URL}${slugEpisode(data?.anime?.slug,data?.number)}`} id={`${data?.anime?.slug}-${data?.number}`}/>
+                    <Comments title={`${data?.anime?.name} Episodio ${data?.number}`} url={`${process.env.URL}${slugEpisode(data?.anime?.slug,data?.number)}`} id={`${data?.anime?.slug}-${data?.number}`}/>
                 </main>
             </Layout>
         );
@@ -199,6 +199,22 @@ export default class number extends Component {
 export async function getServerSideProps(context) {
     try {
         const res = await api.get(`episodes/${context.params.slug}/${context.params.number.replace('capitulo-','')}`);
+        let isMobileView = (context.req 
+            ? context.req.headers['user-agent']
+            : navigator.userAgent
+        ).match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i);
+        if(Boolean(isMobileView) === false){
+            res.data.players.forEach((element, index) => 
+                res.data.players[index] = element.filter(function(item){
+                    if(item.server.title === 'Archive'){
+                        return false;
+                    }else{
+                        return true;
+                    }
+                })
+            )
+        }
+
         return {
             props: { 
                 data: res.data

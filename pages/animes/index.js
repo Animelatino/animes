@@ -139,7 +139,7 @@ class index extends Component {
     }
 }
 
-export async function getServerSideProps(context) {
+index.getInitialProps = async (context) => {
     const queryString = (obj) => {
         return Object.entries(obj)
             .map(([index, val]) => `${index}=${val}`)
@@ -147,11 +147,9 @@ export async function getServerSideProps(context) {
     };
     const res = await api.get(`anime/list?${queryString({ ...context?.query })}`);
     const filters = await api.get(`filterings`);
-    return {
-        props: {
-            data: res.data,
-            filterings: filters.data
-        }
+    return { 
+        data: res.data,
+        filterings: filters.data
     }
 }
 

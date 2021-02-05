@@ -55,11 +55,12 @@ export default class calendario extends Component {
     }
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     const res = await api.get(`anime/simulcast`);
     return {
         props: {
-            simulcast: res.data
-        }
+            simulcast: res.data,
+        },
+        revalidate: 1
     }
 }
