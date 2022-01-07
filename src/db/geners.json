@@ -1,0 +1,154 @@
+{
+    "accion": {
+        "ini": "#4b1181",
+        "fin": "#763eaa"
+    },
+    "aventura": {
+        "ini": "#0f731b",
+        "fin": "#3fa34b"
+    },
+    "ciencia-ficcion": {
+        "ini": "#507768",
+        "fin": "#6b877e"
+    },
+    "comedia": {
+        "ini": "#1881a7",
+        "fin": "#4a91ab"
+    },
+    "demonios": {
+        "ini": "#a64c9a",
+        "fin": "#a67aa1"
+    },
+    "deportes": {
+        "ini": "#1d705e",
+        "fin": "#1f876e"
+    },
+    "drama": {
+        "ini": "#a74c99",
+        "fin": "#a77aa1"
+    },
+    "ecchi": {
+        "ini": "#861063",
+        "fin": "#a3277f"
+    },
+    "escolar": {
+        "ini": "#12238c",
+        "fin": "#273dac"
+    },
+    "espacio": {
+        "ini": "#9b8c15",
+        "fin": "#a6952b"
+    },
+    "fantasia": {
+        "ini": "#870f28",
+        "fin": "#a42641"
+    },
+    "harem": {
+        "ini": "#133325",
+        "fin": "#0c4c32"
+    },
+    "historico": {
+        "ini": "#9e3e14",
+        "fin": "#a35530"
+    },
+    "horror": {
+        "ini": "#9c2539",
+        "fin": "#9d3a47"
+    },
+    "josei": {
+        "ini": "#528f18",
+        "fin": "#5ea722"
+    },
+    "juegos": {
+        "ini": "#0d3e71",
+        "fin": "#0d508f"
+    },
+    "magia": {
+        "ini": "#527869",
+        "fin": "#6c877e"
+    },
+    "mecha": {
+        "ini": "#0d3e71",
+        "fin": "#0d508f"
+    },
+    "militar": {
+        "ini": "#0d3e71",
+        "fin": "#0d508f"
+    },
+    "misterio": {
+        "ini": "#9e2439",
+        "fin": "#a03848"
+    },
+    "musica": {
+        "ini": "#0f3f70",
+        "fin": "#0e4f8e"
+    },
+    "parodia": {
+        "ini": "#a58119",
+        "fin": "#a48d37"
+    },
+    "policial": {
+        "ini": "#112489",
+        "fin": "#273da9"
+    },
+    "psicologico": {
+        "ini": "#4a1180",
+        "fin": "#763eaa"
+    },
+    "recuentos-de-la-vida": {
+        "ini": "#a88b37",
+        "fin": "#a07e13"
+    },
+    "romance": {
+        "ini": "#a82643",
+        "fin": "#831226"
+    },
+    "samurais": {
+        "ini": "#1f8870",
+        "fin": "#1b7060"
+    },
+    "seinen": {
+        "ini": "#4c8b13",
+        "fin": "#62a522"
+    },
+    "shoujo": {
+        "ini": "#a3257e",
+        "fin": "#871064"
+    },
+    "shoujo-ai": {
+        "ini": "#a24d98",
+        "fin": "#a77aa1"
+    },
+    "shounen": {
+        "ini": "#9b8611",
+        "fin": "#a59428"
+    },
+    "shounen-ai": {
+        "ini": "#498fa9",
+        "fin": "#1582aa"
+    },
+    "sobrenatural": {
+        "ini": "#0d3626",
+        "fin": "#0f4930"
+    },
+    "soft-hentai": {
+        "ini": "#871064",
+        "fin": "#871064"
+    },
+    "super-poderes": {
+        "ini": "#a83d12",
+        "fin": "#a65435"
+    },
+    "suspenso": {
+        "ini": "#6b867d",
+        "fin": "#527869"
+    },
+    "terror": {
+        "ini": "#8c8028",
+        "fin": "#716720"
+    },
+    "vampiros": {
+        "ini": "#0e487f",
+        "fin": "#0f4f8d"
+    }
+}

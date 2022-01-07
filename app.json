@@ -1,0 +1,56 @@
+{
+    "expo": {
+        "name": "Kawaii Animes",
+        "slug": "kwanimes",
+        "version": "3.1.1",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "splash": {
+            "image": "./assets/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#000000"
+        },
+        "updates": {
+            "fallbackToCacheTimeout": 0
+        },
+        "userInterfaceStyle": "dark",
+        "assetBundlePatterns": ["**/*"],
+        "ios": {
+            "supportsTablet": true
+        },
+        "androidStatusBar": {
+            "barStyle": "dark-content"
+        },
+        "androidNavigationBar": {
+            "visible": "sticky-immersive"
+        },
+        "android": {
+            "versionCode": 5,
+            "useNextNotificationsApi": true,
+            "permissions": ["WRITE_EXTERNAL_STORAGE"],
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/adaptive-icon.png",
+                "backgroundColor": "#fe1f42"
+            },
+            "package": "com.darkdeveloper.kawaiianimes",
+            "googleServicesFile": "./google-services.json",
+            "config": {
+                "googleMobileAdsAppId": "ca-app-pub-5211659094025398~8723435078"
+            }
+        },
+        "web": {
+            "favicon": "./assets/favicon.png",
+            "config": {
+                "firebase": {
+                    "apiKey": "AIzaSyChE1hFgjHKJpvELR5lufwP1l5IQi08ABM",
+                    "authDomain": "kawaiianimes-57a09.firebaseapp.com",
+                    "projectId": "kawaiianimes-57a09",
+                    "storageBucket": "kawaiianimes-57a09.appspot.com",
+                    "messagingSenderId": "1062730604213",
+                    "appId": "1:1062730604213:web:6feb62680574d83994a8fc",
+                    "measurementId": "G-HQ8KP91BPG"
+                }
+            }
+        }
+    }
+}

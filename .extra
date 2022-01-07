@@ -1,0 +1,5 @@
+export default {
+    extra: {
+        admobInterticial: process.env.ADMOB_INTERSTICIAL,
+    },
+};
