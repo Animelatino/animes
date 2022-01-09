@@ -43,7 +43,7 @@ export default (props) => {
             setFecthing(false);
             if (error.response) {
                 if (error.response.status != 200) {
-                    setError('Sin hay acceso a los servidores.');
+                    setError('Sin acceso a los servidores.');
                 }
             } else {
                 setError('Hubo un error inesperado.');

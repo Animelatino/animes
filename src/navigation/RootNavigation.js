@@ -60,9 +60,9 @@ export default () => {
                 <Tab.Screen name="Inicio" component={Home} />
                 <Tab.Screen name="Busqueda" component={Busqueda} />
                 <Tab.Screen name="Directorio" component={Directorio} />
-                {/* {config?.perfil && ( */}
-                <Tab.Screen name="Perfil" component={Perfil} />
-                {/* )} */}
+                {config?.perfil && (
+                    <Tab.Screen name="Perfil" component={Perfil} />
+                )}
             </Tab.Navigator>
             <AuthenticateUser />
         </>

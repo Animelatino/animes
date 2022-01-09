@@ -2,7 +2,7 @@
     "expo": {
         "name": "Kawaii Animes",
         "slug": "kwanimes",
-        "version": "3.1.1",
+        "version": "3.1.2",
         "orientation": "portrait",
         "icon": "./assets/icon.png",
         "splash": {
@@ -25,7 +25,7 @@
             "visible": "sticky-immersive"
         },
         "android": {
-            "versionCode": 5,
+            "versionCode": 6,
             "useNextNotificationsApi": true,
             "permissions": ["WRITE_EXTERNAL_STORAGE"],
             "adaptiveIcon": {

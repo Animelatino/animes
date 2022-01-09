@@ -18,6 +18,7 @@ export default () => {
     const [error, setError] = useState(null);
     const [fetching, setFecthing] = useState(true);
     const [refreshing, setRefreshing] = useState(false);
+    const { config } = useStore();
 
     async function getDataHome() {
         try {
@@ -28,7 +29,7 @@ export default () => {
             setFecthing(false);
             if (error.response) {
                 if (error.response.status != 200) {
-                    setError('Sin hay acceso a los servidores.');
+                    setError('Sin acceso a los servidores.');
                 }
             } else {
                 setError('Hubo un error inesperado.');
@@ -81,15 +82,17 @@ export default () => {
                     />
                 }
             >
-                <Section>
-                    <Listing
-                        data={data?.episodes}
-                        keyExtractor={(item) =>
-                            `${item?.anime?.slug}-${item?.number}`
-                        }
-                        renderItem={(props) => <EpisodeItem {...props} />}
-                    />
-                </Section>
+                {config?.videos && (
+                    <Section>
+                        <Listing
+                            data={data?.episodes}
+                            keyExtractor={(item) =>
+                                `${item?.anime?.slug}-${item?.number}`
+                            }
+                            renderItem={(props) => <EpisodeItem {...props} />}
+                        />
+                    </Section>
+                )}
                 <Section title="Animes populares">
                     <Listing
                         data={data?.animeP}
